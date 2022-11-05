@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+table {
+    height: 80vmin;
+    aspect-ratio: 1/1;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+tr:nth-child(3), tr:nth-child(6) {
+    border-bottom: 3px solid black;
+}
+
+td:nth-child(3), td:nth-child(6) {
+    border-right: 3px solid black;
+}
+
+table td {
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
